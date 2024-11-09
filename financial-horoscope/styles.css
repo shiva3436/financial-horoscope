@@ -1,0 +1,179 @@
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(45deg, #ff6f61, #ffcc00);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+/* App container */
+#app-container {
+    width: 90%;
+    max-width: 900px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+/* Zodiac Sign Selection */
+#sign-selection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#sign-selection h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#sign-selection p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+/* Dropdown Styling */
+select {
+    font-size: 1.1rem;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    width: 250px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    background-color: rgba(255, 255, 255, 0.2);  /* Light transparent background */
+    color: #fff;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+select option {
+    background-color: #333;  /* Dark background for dropdown options */
+    color: #fff;             /* White text color for the options */
+    padding: 8px;
+    transition: background-color 0.3s ease;
+}
+
+select option:hover {
+    background-color: #ffcc00;  /* Highlight option on hover */
+    color: #333;                /* Dark text color for better visibility */
+}
+
+select:focus {
+    outline: none;
+    border-color: #ffcc00;
+}
+
+/* Buttons */
+button {
+    font-size: 1.1rem;
+    padding: 10px 25px;
+    border-radius: 25px;
+    border: none;
+    background-color: #ffcc00;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #ff6f61;
+    transform: scale(1.05);
+}
+
+/* Horoscope Display Section */
+#horoscope-container {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+#horoscope-container h1 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#horoscope-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 30px;
+    text-align: left;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+#horoscope-text {
+    margin-bottom: 15px;
+}
+
+#financial-tip {
+    font-style: italic;
+    color: #ffcc00;
+}
+
+/* Buttons in the Horoscope Container */
+#new-horoscope-btn, #back-home-btn {
+    width: 100%;
+    max-width: 250px;
+    margin-top: 10px;
+}
+
+#new-horoscope-btn {
+    background-color: #007bff;
+}
+
+#new-horoscope-btn:hover {
+    background-color: #0056b3;
+}
+
+#back-home-btn {
+    background-color: #28a745;
+}
+
+#back-home-btn:hover {
+    background-color: #218838;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #app-container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    #sign-selection h1 {
+        font-size: 2rem;
+    }
+
+    #horoscope-container h1 {
+        font-size: 2rem;
+    }
+
+    select {
+        width: 100%;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 8px 20px;
+    }
+}

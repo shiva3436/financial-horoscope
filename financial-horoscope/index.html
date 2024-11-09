@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Financial Horoscope</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div id="app-container">
+    <!-- Zodiac Sign Selection -->
+    <div id="sign-selection">
+      <h1>Find Your Financial Horoscope!</h1>
+      <p>Choose your zodiac sign:</p>
+      <select id="zodiac-sign" onchange="generateHoroscope()">
+        <option value="">Select your Zodiac</option>
+        <option value="Aries">Aries</option>
+        <option value="Taurus">Taurus</option>
+        <option value="Gemini">Gemini</option>
+        <option value="Cancer">Cancer</option>
+        <option value="Leo">Leo</option>
+        <option value="Virgo">Virgo</option>
+        <option value="Libra">Libra</option>
+        <option value="Scorpio">Scorpio</option>
+        <option value="Sagittarius">Sagittarius</option>
+        <option value="Capricorn">Capricorn</option>
+        <option value="Aquarius">Aquarius</option>
+        <option value="Pisces">Pisces</option>
+      </select>
+    </div>
+
+    <!-- Horoscope Display Section -->
+    <div id="horoscope-container" style="display: none;">
+      <h1>Your Daily Financial Horoscope</h1>
+      <div id="horoscope-content">
+        <p id="horoscope-text"></p>
+        <p id="financial-tip"></p>
+      </div>
+      <button id="new-horoscope-btn" onclick="generateHoroscope()">Get New Horoscope</button>
+      <button id="back-home-btn" onclick="resetHome()">Back to Home</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
